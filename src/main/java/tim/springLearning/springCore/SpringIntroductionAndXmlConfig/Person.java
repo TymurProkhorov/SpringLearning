@@ -1,0 +1,41 @@
+package tim.springLearning.springCore.SpringIntroductionAndXmlConfig;
+
+public class Person {
+    private Pet pet;
+private String surname;
+private int age;
+    public Person(Pet pet) { // внедрение зависимости вручную.
+        System.out.println("Person bean was created");
+        this.pet = pet;
+    }
+
+    public Person() {}
+
+
+
+        public void setPet(Pet pet) {
+            System.out.println("Person class: set added");
+        this.pet = pet;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void callPet() {
+        System.out.println("Hello, my lovely pet!");
+        pet.say();
+    }
+}
