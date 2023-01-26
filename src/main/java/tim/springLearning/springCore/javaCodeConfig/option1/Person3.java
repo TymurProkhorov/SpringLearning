@@ -1,7 +1,7 @@
 package tim.springLearning.springCore.javaCodeConfig.option1;
 
 import org.springframework.stereotype.Component;
-import springCore.SpringIntroductionAndXmlConfig.Pet;
+import tim.springLearning.springCore.SpringIntroductionAndXmlConfig.Pet;
 
 @Component("person3")
 public class Person3 {
