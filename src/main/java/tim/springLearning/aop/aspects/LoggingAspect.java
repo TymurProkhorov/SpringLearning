@@ -9,14 +9,15 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class LoggingAspect {
 
-    @Pointcut("execution(void get*()))")
+    @Pointcut("execution(void get*()))") // поинткаты можно указывать здесь,можно отдельно(MyPointcuts), лучше отдельно
     private void allGetMethods(){}
 
     @Before("allGetMethods()") // поинткат!
     public void beforeGetBookAdvice() {
         /*
          advice - метод внутри аспект-класса.
-         Before указывает, перед каким методом этот эдвайс должен идти.
+         Before указывает, что сквозная логика должна идти именно ПЕРЕД методом с основной логикой, а поинткат -
+          перед каким именно методом или перед какими методами этот эдвайс должен идти.
          */
         System.out.println("beforeGetBookAdvice: trying to get a book");
     }
