@@ -7,11 +7,11 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="com.example.annotationConfig"/>
+    <context:component-scan base-package="tim.springLearning.springCore.annotationConfig"/>
     <context:property-placeholder location="myApp.properties"/>
 
     <bean id="person22"
-          class="springCore.annotationConfig.Person2">
+          class="tim.springLearning.springCore.annotationConfig.Person2">
         <property name="surname" value="${person2.surname}}"/>
         <property name="age" value="${person2.age}"/>
         <property name="pet2" ref="myDog"/>

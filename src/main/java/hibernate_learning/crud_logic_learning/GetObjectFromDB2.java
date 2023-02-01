@@ -1,13 +1,13 @@
-package hibernate_test;
+package hibernate_learning.crud_logic_learning;
 
-import hibernate_test.entity.Employee;
+import hibernate_learning.entity.Employee;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 import java.util.List;
 
-public class Test3 { // получение объекта из БД с помощью HQL
+public class GetObjectFromDB2 { // получение объекта из БД с помощью HQL
     public static void main(String[] args) {
         SessionFactory factory = new Configuration()
                 .configure("hibernate.cfg.xml")

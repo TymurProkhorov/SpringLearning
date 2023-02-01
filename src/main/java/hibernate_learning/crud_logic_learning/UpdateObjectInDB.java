@@ -1,13 +1,13 @@
-package hibernate_test;
+package hibernate_learning.crud_logic_learning;
 
-import hibernate_test.entity.Employee;
+import hibernate_learning.entity.Employee;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 import java.util.List;
 
-public class Test4 { // изменение объекта БД
+public class UpdateObjectInDB { // изменение объекта БД
     public static void main(String[] args) {
 
 
