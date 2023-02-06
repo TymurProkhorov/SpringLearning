@@ -22,12 +22,6 @@ public class TestAOP {
 //        library.getBook(book);
         library.addBook("Tim", book);
 
-
-
-
-
-
-
         context.close();
     }
 }
